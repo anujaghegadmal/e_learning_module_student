@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="e_learning">
+<head>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-ui-router.min.js"></script>
+    <script src="assets/js/ocLazyLoad.min.js"></script>
+    <!-- <script src="assets/js/angular-route.js"></script> -->
+    <div ng-include="'static/include/head.html'"></div>
+</head>
+<body>
+    <base href="/"></base>
+    <section ng-controller="login_ctrl" class="login_area section_padding_100">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-5 col-xl-6 item">
+                    <!-- Login thumb start -->
+                    <div class="login_thumb" style="background-image: url(img/bg-pattern/courses-bg.jpg);">
+                        <!-- Login thumb caption -->
+                        <div class="login_thumb_caption">
+                            <h3>Welcome Back!</h3>
+                            <p>Continue your learning by sign in.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-7 col-xl-6 item">
+                    <!-- login form start -->
+                    <div class="login_form">
+                        <!-- sign in manual form -->
+                        <div class="login_manual_form">
+                            <form ng-submit="login()" id="login">
+                                <div class="form-group">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" ng-model="login_c.email" name="email" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                    <input type="password" ng-model="login_c.password" name="password" placeholder="Password">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-xl-6"></div>
+                                    <div class="col-lg-6 col-xl-6">
+                                        <button type="submit" class="btn btn-default" id="login_submit">Sign in</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <br>
+                            <!-- forget password -->
+                            <div class="forget_pass one">
+                                <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Forget Password</a>
+                            </div>
+                            <div class="forget_pass">
+                                <a href="register.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Didn't have a account? Register</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h1></h1>
+                            <center><h5>OR</h5>
+                            <a href="http://localhost:8585/login"><i class="fa fa-lock" aria-hidden="true"></i> Login as instructor</a></center>
+                        </div>
+                    </div>
+                    <!-- login form end -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app_routing.js"></script>
+</body>
+</html>

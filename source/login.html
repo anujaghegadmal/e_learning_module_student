@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>E-Learning App</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/core-img/favicon.ico">
+
+    <!-- ===================== All CSS Files ===================== -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Header Area Start -->
+    <header class="header_area">
+        <!-- Top Header Area Start -->
+        <div class="top_header_area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md">
+                        <!--  Top Quote Area Start -->
+                        <div class="top_quote">
+                            <p>Welcome to E-Learning Platform</p>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="login_language_area d-flex align-items-center float-right">
+                            <!-- Login Register Area Start -->
+                            <div class="login_register">
+                                <button id="lag" type="button" class="btn btn-info waves-effect">
+                                    <a href="/login"><i class="fa fa-lock" aria-hidden="true"></i> Login/Register</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Header Area Start -->
+        <div class="main_header_area animated">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="educampNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="/">E-Learning App</a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <!-- <ul>
+                                    <li class="current_page_item"><a href="/">Home</a></li>
+                                    <li><a href="/course">Course</a></li>
+                                </ul> -->
+                                <ul>
+                                    <li class="current_page_item"><a href="/">Home</a></li>
+                                    <li><a href="/course">Course</a></li>
+                                    <li><a href="/my_learning">My learning</a></li>
+                                    <li><a href="/favourites">Favourites</a></li>
+                                    <li><a href="/my_profile">My profile</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--  ===================== Header Area End ===================== -->
+
+    <!-- ===================== Breadcumb area start ===================== -->
+    <section class="breadcumb_area" style="background-image: url(img/bg-pattern/breadcumb.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="breadcumb_section">
+                        <!-- Breadcumb page title start -->
+                        <div class="page_title">
+                            <h3>sign in</h3>
+                        </div>
+                        <!-- Breadcumb page pagination start -->
+                        <div class="page_pagination">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li>Sign in</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================== Breadcumb area end ===================== -->
+
+    <!-- ===================== login area start ===================== -->
+    <section class="login_area section_padding_100">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-5 col-xl-6 item">
+                    <!-- Login thumb start -->
+                    <div class="login_thumb" style="background-image: url(img/bg-pattern/courses-bg.jpg);">
+                        <!-- Login thumb caption -->
+                        <div class="login_thumb_caption">
+                            <h3>Welcome Back!</h3>
+                            <p>Continue your learning by sign in.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-7 col-xl-6 item">
+                    <!-- login form start -->
+                    <div class="login_form">
+                        <!-- sign in manual form -->
+                        <div class="login_manual_form">
+                            <form id="login" action="#" method="post">
+                                <div class="form-group">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" name="email" id="email" placeholder="Username">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                    <input type="password" name="password" id="password" placeholder="Password">
+                                </div>
+                                   <button type="submit" class="btn btn-default" id="login_submit">Sign in</button>
+                            </form>
+                            <!-- forget password -->
+                            <div class="forget_pass one">
+                                <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>Forget Password</a>
+                            </div>
+                            <div class="forget_pass">
+                                <a href="register.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Didn't have a account? Register</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h1></h1>
+                            <center><h5>OR</h5>
+                            <a href="login.html"><i class="fa fa-lock" aria-hidden="true"></i> Login as instructor</a></center>
+                        </div>
+                    </div>
+                    <!-- login form end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================== login area end ===================== -->
+
+    <!-- ===================== Footer Area Start ===================== -->
+    <footer class="footer_area">
+        <div class="container">
+            <div class="section_padding_100_70">
+                <div class="row">
+                    <!-- Footer About Area Start -->
+                    <div class="col-12 col-md-6 col-lg">
+                        <div class="footer_about_us footer-single-part">
+                            <div class="title">
+                                <a href="about_us"><h4>About us</h4></a>
+                                <!-- Useful Links Title -->
+                                <div class="underline"></div>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nostrum, illum quod facilis minima natus adipisci, fugit provident! Totam ipsam, ullam aut. Autem, corporis, tenetur.</p>
+                            <div class="footer_social_links">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer About Area End -->
+
+                    <!-- Contact info Area Start -->
+                    <div class="col-12 col-md-6 col-lg">
+                        <div class="footer_contact_info footer-single-part">
+                            <div class="title">
+                                <h4>Contact us</h4>
+                                <!-- Useful Links Title -->
+                                <div class="underline"></div>
+                            </div>
+                            <!-- single contact info start -->
+                            <div class="footer_single_contact_info">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <a href="tel:+8801791166123">+88 698 257 14520</a>
+                                <a href="tel:+8801791166123">+88 698 257 14521</a>
+                            </div>
+                            <!-- single contact info start -->
+                            <div class="footer_single_contact_info">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                <a href="mailto:info@educamp.com">info@elearning.com</a>
+                                <a href="mailto:care@educamp.com">care@elearning.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact info Area End -->
+
+                    <!-- Useful Links Area Start -->
+                    <div class="col-12 col-md-6 col-lg">
+                        <div class="important_links footer-single-part">
+                            <div class="title">
+                                <h4>useful links</h4>
+                                <div class="underline"></div>
+                            </div>
+                            <!-- Links Start -->
+                            <div class="links">
+                                <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> All Our Courses</a>
+                                <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Customer Support</a>
+                                <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Career at E-Learning</a>
+                                <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer Area Start -->
+        
+    </footer>
+    <!-- ===================== Footer Area End ===================== -->
+
+    <!-- ===================== All jQuery Plugins ===================== -->
+
+    <!-- jQuery (necessary for all JavaScript plugins) -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- Classy Nav js -->
+    <script src="assets/js/classy-nav.js"></script>
+    <!-- Active js -->
+    <script src="assets/js/active.js"></script>
+
+    <script>
+        $("#login").submit(function(e){
+            e.preventDefault();
+            var login = $("#login").serializeArray();
+        
+            $.ajax({
+                url: "http://localhost:8080/users/login_std",
+                type:"POST",
+                data:login,
+                success:(function(e){
+                    console.log(e.payload);
+                    localStorage.setItem("token", e.payload);
+                    if ("token" == null){
+                        location.href="login.html"
+                    }
+                    else{
+                        location.href="index.html"
+                    }
+                    
+                })
+            });
+        });
+    </script>
+
+</body>
+
+</html>

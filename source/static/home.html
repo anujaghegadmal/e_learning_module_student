@@ -1,0 +1,326 @@
+<!-- ===================== Welcome Area Start ===================== -->
+<section class="welcome_area clearfix" id="home">
+    <div class="welcome_slides">
+        <!-- Single Slide -->
+        <div class="single_slide text-center" style="background-image: url(assets/img/bg-pattern/edu-1.jpg);">
+            <div class="slide_text">
+                <div class="table">
+                    <div class="table_cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 data-animation="fadeInUp" data-delay="200ms" data-duration="500ms">Taking the lead for education quality</h2>
+                                    <p data-animation="fadeInUp" data-delay="500ms" data-duration="500ms">Educating the mind without educating the heart is no education at all.</p>
+                                    <a href="#" class="btn welcome-btn" data-animation="fadeInUp" data-delay="800ms" data-duration="500ms">Start A Course <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="single_slide text-center" style="background-image: url(assets/img/bg-pattern/edu-2.jpg);">
+            <div class="slide_text">
+                <div class="table">
+                    <div class="table_cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 data-animation="fadeInUp" data-delay="200ms" data-duration="500ms">The number one source for education</h2>
+                                    <p data-animation="fadeInUp" data-delay="500ms" data-duration="500ms">Education is the most powerful weapon which you can use to change the world.</p>
+                                    <a href="#" class="btn welcome-btn" data-animation="fadeInUp" data-delay="800ms" data-duration="500ms">Learn More <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="single_slide text-center" style="background-image: url(assets/img/bg-pattern/edu-1.jpg);">
+            <div class="slide_text">
+                <div class="table">
+                    <div class="table_cell">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 data-animation="fadeInUp" data-delay="200ms" data-duration="500ms">Taking the lead for education quality</h2>
+                                    <p data-animation="fadeInUp" data-delay="500ms" data-duration="500ms">Educating the mind without educating the heart is no education at all.</p>
+                                    <a href="#" class="btn welcome-btn" data-animation="fadeInUp" data-delay="800ms" data-duration="500ms">Start A Course <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===================== Welcome Area End ===================== -->
+
+<!-- ===================== Search Courses Area Start ===================== -->
+<div class="search_courses_area section_padding_100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Search Text -->
+                <div class="search_text">
+                    <h2>Find your desire courses</h2>
+                    <p>To get what you want you can enter keyword also</p>
+                </div>
+                <!-- Search Form -->
+                <div class="search_form">
+                    <form action="#" method="get">
+                        <div id="searchbar" class="form-row">
+                            <div class="form-group col-12 col-md-7">
+                                <input type="text" class="form-control keyword" placeholder="Search your course here..">{{search.course_nam}}
+                            </div>
+                            <div class="form-group col-12 col-md-2">
+                                <button type="submit" class="btn submit-btn btn-primary w-100">Search</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===================== Popular Courses Area Start ===================== -->
+<div class="popular_coureses_area all_courses grid_list section_padding_100">
+    <div class="container">
+        <div id="card" class="row">
+            <div ng-repeat="course in courses" class="col-lg-4 col-xl-4">
+                <!-- Single Courses Area Start -->
+                <div class='col-12 col-md-12 col-lg-12'>
+                    <div class='single_courses card'>
+                        <div class='single_courses_thumb'>
+                            <div class='courses_badge'>
+                                <span>₹ {{course.course_fees}}</span>
+                            </div>
+                            <img style='height:200px' src='http://localhost:8080/{{course.course_img_thumbnail}}' alt=''>
+                        </div>
+                        <div class='single_courses_desc'>
+                            <div class='title' style='height:145px'>
+                                <a href='#'>{{course.course_name}}</a>
+                                <p>{{course.course_description}}</p>
+                            </div>
+                            <div class='price_rating_area d-flex align-items-center pb-3'>
+                                <button type='button' class='btn btn-block btn-primary w-100'>Enroll</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Courses Area End -->
+            </div>                        
+        </div>
+    </div>       
+</div>
+<!-- ===================== Popular Courses Area End ===================== -->
+
+<!-- ===================== All Collection Area Start ===================== -->
+<section class="all_collection_area section_padding_100_70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading Area Start -->
+                <div class="section_heading">
+                    <h2>All Course Collection</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis amet mollitia voluptatibus dolor officiis ad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="single_course_collection" style="background-image: url(img/bg-pattern/all-c-1.jpg);">
+                    <a href="#">
+                        <h4>Adobe Photoshop</h4>
+                        <p>07 Courses</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="single_course_collection" style="background-image: url(img/bg-pattern/all-c-2.jpg);">
+                    <a href="#">
+                        <h4>Home Economics</h4>
+                        <p>13 Courses</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="single_course_collection" style="background-image: url(img/bg-pattern/all-c-3.jpg);">
+                    <a href="#">
+                        <h4>WordPress</h4>
+                        <p>21 Courses</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="single_course_collection" style="background-image: url(img/bg-pattern/all-c-4.jpg);">
+                    <a href="#">
+                        <h4>Design &amp; Illustration</h4>
+                        <p>14 Courses</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="single_course_collection" style="background-image: url(img/bg-pattern/all-c-5.jpg);">
+                    <a href="#">
+                        <h4>Business Courses</h4>
+                        <p>52 Courses</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="single_course_collection" style="background-image: url(img/bg-pattern/all-c-6.jpg);">
+                    <a href="#">
+                        <h4>JavaScript</h4>
+                        <p>16 Courses</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="single_course_collection" style="background-image: url(img/bg-pattern/all-c-7.jpg);">
+                    <a href="#">
+                        <h4>Email Marketing</h4>
+                        <p>29 Courses</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="single_course_collection" style="background-image: url(img/bg-pattern/all-c-8.jpg);">
+                    <a href="#">
+                        <h4>Motion Graphics</h4>
+                        <p>05 Courses</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===================== All Collection Area End ===================== -->
+
+<!-- ===================== Call to action Area Start ===================== -->
+<div class="call_to_action section_padding_100" style="background-image: url(assets/img/bg-pattern/breadcumb.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="call_to">
+                    <h3>Bring your career on the right track. Start today!</h3>
+                    <a href="#" class="btn welcome-btn" role="button">Start A Course <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ===================== Call to action Area End ===================== -->
+
+<!-- ===================== Blog Area Start ===================== -->
+<section class="blog_area section_padding_100_70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <!-- Section Heading Area Start -->
+                <div class="section_heading">
+                    <h2>Latest Articles</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis amet mollitia voluptatibus dolor officiis ad.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <!-- single latest news area start -->
+            <div class="col-lg-4 col-12 col-md-6">
+                <div class="single_latest_news_area">
+                    <!-- single latest news thumb -->
+                    <div class="single_latest_news_img_area">
+                        <img src="img/news-img/blog.jpg" alt="">
+                        <!-- single latest news published date -->
+                        <div class="published_date">
+                            <p class="date">01</p>
+                            <p class="month">Aug</p>
+                        </div>
+                    </div>
+                    <div class="single_latest_news_text_area">
+                        <!-- single latest news title -->
+                        <div class="news_title">
+                            <a href="#">Improve Your Computer Skills, Sign Up For Free Online Courses</a>
+                        </div>
+                        <!-- single latest news excerp -->
+                        <div class="news_content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ducimus consectetur assumenda, ullam dolor provident?</p>
+                            <a href="#" class="btn blog-btn">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- single latest news area start -->
+            <div class="col-lg-4 col-12 col-md-6">
+                <div class="single_latest_news_area">
+                    <!-- single latest news thumb -->
+                    <div class="single_latest_news_img_area">
+                        <img src="img/news-img/blog-2.jpg" alt="">
+                        <!-- single latest news published date -->
+                        <div class="published_date">
+                            <p class="date">22</p>
+                            <p class="month">Dec</p>
+                        </div>
+                    </div>
+                    <div class="single_latest_news_text_area">
+                        <!-- single latest news title -->
+                        <div class="news_title">
+                            <a href="#">Education is not preparation for life; education is life itself</a>
+                        </div>
+                        <!-- single latest news excerp -->
+                        <div class="news_content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ducimus consectetur assumenda, ullam dolor provident?</p>
+                            <a href="#" class="btn blog-btn">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- single latest news area start -->
+            <div class="col-lg-4 col-12 col-md-6">
+                <div class="single_latest_news_area">
+                    <!-- single latest news thumb -->
+                    <div class="single_latest_news_img_area">
+                        <img src="img/news-img/blog-3.jpg" alt="">
+                        <!-- single latest news published date -->
+                        <div class="published_date">
+                            <p class="date">13</p>
+                            <p class="month">Feb</p>
+                        </div>
+                    </div>
+                    <div class="single_latest_news_text_area">
+                        <!-- single latest news title -->
+                        <div class="news_title">
+                            <a href="#">Education is the key to unlock the golden door of freedom</a>
+                        </div>
+                        <!-- single latest news excerp -->
+                        <div class="news_content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ducimus consectetur assumenda, ullam dolor provident?</p>
+                            <a href="#" class="btn blog-btn">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Classy Nav js -->
+    <script type="text/javascript-lazy" src="assets/js/classy-nav.js"></script>
+    <!-- Active js -->
+    <script type="text/javascript-lazy" src="assets/js/active.js"></script>
+
