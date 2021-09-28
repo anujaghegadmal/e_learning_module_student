@@ -18,8 +18,8 @@
                     <div class="login_thumb" style="background-image: url(img/bg-pattern/courses-bg.jpg);">
                         <!-- Login thumb caption -->
                         <div class="login_thumb_caption">
-                            <h3>Welcome Back!</h3>
-                            <p>Continue your learning by sign in.</p>
+                            <h3>Register here!</h3>
+                            <p>Continue your learning by sign up.</p>
                         </div>
                     </div>
                 </div>
@@ -29,19 +29,33 @@
                     <div class="login_form">
                         <!-- sign in manual form -->
                         <div class="login_manual_form">
-                            <form ng-submit="login()" id="login">
+                            <form ng-submit="register()" id="login">
                                 <div class="form-group">
                                     <i class="fa fa-user"></i>
-                                    <input type="text" ng-model="login_c.email" name="email" placeholder="Email ID">
+                                    <input type="text" ng-model="register_c.name" name="name" placeholder="Enter Name">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-user"></i>
+                                    <input type="email" ng-model="register_c.email" name="email" placeholder="Enter Email ID">
+                                </div>
+                                <div class="form-group">
+                                    <i class="fa fa-user"></i>
+                                    <input type="text" ng-model="register_c.phone_no" name="phone_no" placeholder="Enter Phone number">
                                 </div>
                                 <div class="form-group">
                                     <i class="fa fa-lock" aria-hidden="true"></i>
-                                    <input type="password" ng-model="login_c.password" name="password" placeholder="Password">
+                                    <input type="password" ng-model="register_c.password" name="password" placeholder="Enter Password">
                                 </div>
+                                <div class="form-group">
+                                    <i class="fa fa-user"></i>
+                                    <input type="file" id="f_upload" onchange='angular.element(this).scope().add_file()' placeholder="Upload your profile picture here">
+                                    <input type="hidden" ng-model="register_c.img_path" name="img_path" class="form-control input-sm">
+                                </div>
+
                                 <div class="row">
                                     <div class="col-lg-6 col-xl-6"></div>
                                     <div class="col-lg-6 col-xl-6">
-                                        <button type="submit" class="btn btn-default" id="login_submit">Sign in</button>
+                                        <button type="submit" class="btn btn-default" id="login_submit">Sign up</button>
                                     </div>
                                 </div>
                             </form>
@@ -51,7 +65,7 @@
                                 <a href="/forget_password"><i class="fa fa-question-circle" aria-hidden="true"></i>Forget Password</a>
                             </div>
                             <div class="forget_pass">
-                                <a href="/register"><i class="fa fa-user-plus" aria-hidden="true"></i>Didn't have a account? Register</a>
+                                <a href="/login"><i class="fa fa-user-plus" aria-hidden="true"></i>Already have a account? Login</a>
                             </div>
                         </div>
                         <div>

@@ -1,22 +1,26 @@
 <header class="header_area">
     <!-- Top Header Area Start -->
     <div class="top_header_area">
-        <div class="container">
-            <div class="row align-items-center">
+        <div class="container" style="vertical-align: middle;">
+            <div class="row">
                 <div class="col-md">
                     <!--  Top Quote Area Start -->
-                    <div class="top_quote">
-                        <br>
-                        <p>Welcome to E-Learning Platform</p>
+                    <div class="" style="margin-top: 12px;">
+                        <p style="color:white">Welcome to E-Learning Platform</p>
                         <br>
                     </div>
                 </div>
-                <div class="col-md">
-                    <div class="login_language_area d-flex align-items-center float-right" ng-hide="display">
+                <div class="col-md" ng-controller="login_ctrl">
+                    <div class="login_language_area d-flex float-right" style="margin-top: 7px;">
                         <!-- Login Register Area Start -->
-                        <div class="login_register">
+                        <div class="login_register" ng-hide="displayin">
                             <button id="lag" type="button" class="btn btn-info waves-effect">
                                 <a href="http://localhost:8580/login"><i class="fa fa-lock" aria-hidden="true"></i> Login/Register</a>
+                            </button>
+                        </div>
+                        <div class="login_register" ng-hide="displayout">
+                            <button id="lag" type="button" class="btn btn-info waves-effect" ng-click="logout()">
+                                <i class="fa fa-lock" aria-hidden="true"></i> Logout
                             </button>
                         </div>
                     </div>
@@ -56,9 +60,9 @@
                             <ul>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/course">Course</a></li>
-                                <li><a href="/my_learning">My learning</a></li>
-                                <li><a href="/favourites">Favourites</a></li>
-                                <li><a href="/my_profile">My profile</a></li>
+                                <li ng-hide="displayout"><a href="/my_learning">My learning</a></li>
+                                <li ng-hide="displayout"><a href="/favourites">Favourites</a></li>
+                                <li ng-hide="displayout"><a href="/my_profile">My profile</a></li>
                             </ul>
                         </div>
                     </div>

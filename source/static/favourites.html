@@ -16,7 +16,7 @@
 <!-- Breadcumb area end -->
 
 <!-- ===================== Popular Courses Area Start ===================== -->
-<div class="popular_coureses_area all_courses grid_list section_padding_100">
+<div class="popular_coureses_area all_courses grid_list section_padding_100" style="margin-bottom: -100px;">
     <div class="container">
         <div id="fav" class="row">
             <!-- Single Courses Area Start -->
@@ -26,9 +26,16 @@
                         <img style='width:265px' src='http://localhost:8080/{{value.course_img_thumbnail}}' alt=''>
                     </div>
                     <div class='single_courses_desc'>
-                        <div class='title'>
-                            <a href='#''>{{value.course_name}}</a>
-                            <p>{{value.course_description}}</p>
+                        <div class="row">
+                            <div class='title col-8'>
+                                <a href='#'>{{value.course_name}}</a>
+                                <p>{{value.course_description}}</p>
+                            </div>
+                            <div class='col-3'>
+                                <p>  </p>
+                                <button type='button' class='btn btn-block btn-primary w-100' ng-click='fav_enroll(value.enrollment_id)'>Enroll</button>
+                            </div>
+                            <div class='col-1'></div>
                         </div>
                         <div class='price_rating_area d-flex align-items-center'>
                             <div class='price w-50'>

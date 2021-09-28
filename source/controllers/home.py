@@ -35,10 +35,25 @@ def file_handler(path):
         return make_response({"Error":str(e)},500)
 
 @app.route("/login")
-def login_std():
+def login():
     try:
         return send_file(app.root_path+"/static/login_std.html")
         
     except Exception as e:
         return make_response({"Error":str(e)},500)
 
+@app.route("/register")
+def register():
+    try:
+        return send_file(app.root_path+"/static/register.html")
+        
+    except Exception as e:
+        return make_response({"Error":str(e)},500)
+
+@app.route("/forget_password")
+def forget_password():
+    try:
+        return send_file(app.root_path+"/static/forget_password.html")
+        
+    except Exception as e:
+        return make_response({"Error":str(e)},500)

@@ -89,6 +89,28 @@ app.config(function($stateProvider,$locationProvider){
         }
     });
     $stateProvider.state({
+        name:"videos",
+        url:"/videos",
+        controller:"base_controller",
+        templateUrl:"static/videos.html",
+        resolve:{
+            deps:["$ocLazyLoad",function($ocLazyLoad){
+                return $ocLazyLoad.load([
+                    {
+                        name:"ui.select",
+                        serie:true,
+                        files:[
+                            "assets/js/jquery-2.2.4.min.js",
+                            "assets/js/popper.min.js",
+                            "assets/js/bootstrap.min.js",
+                            "assets/js/plugins.js"
+                        ]
+                    }
+                ])
+            }]
+        }
+    });
+    $stateProvider.state({
         name:"my_profile",
         url:"/my_profile",
         controller:"base_controller",
