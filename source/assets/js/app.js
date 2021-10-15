@@ -241,7 +241,7 @@ app.controller("base_controller",function($scope, $state, $http, $httpParamSeria
 
 app.controller("login_ctrl",function($scope, $state, $http, $httpParamSerializer){
 
-    var host = "https://api.elearning.technoblocks.in:8080"
+    var host = "https://api.elearning.technoblocks.in"
 
     var token = localStorage.getItem("token")
 
@@ -264,10 +264,10 @@ app.controller("login_ctrl",function($scope, $state, $http, $httpParamSerializer
             var role = res.data.role;
             localStorage.setItem("token", res.data.payload);
             if (role == "std"){
-                location.href="https://student.elearning.technoblocks.in:8580/"
+                location.href="https://student.elearning.technoblocks.in/"
             }  
             else{
-                location.href="https://instructor.elearning.technoblocks.in:8585/login"
+                location.href="https://instructor.elearning.technoblocks.in/login"
             }
 
         },function(error){
@@ -277,7 +277,7 @@ app.controller("login_ctrl",function($scope, $state, $http, $httpParamSerializer
 
     $scope.logout = function(){
         localStorage.clear();
-        location.href="https://student.elearning.technoblocks.in:8580/login";
+        location.href="https://student.elearning.technoblocks.in/login";
     }
 
     $scope.add_file = function(){
@@ -316,7 +316,7 @@ app.controller("login_ctrl",function($scope, $state, $http, $httpParamSerializer
             }
         }).then(function(res){
             console.log(res);
-            location.href="https://student.elearning.technoblocks.in:8580/"
+            location.href="https://student.elearning.technoblocks.in/"
         },function(error){
             console.log(error);
         })
